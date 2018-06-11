@@ -9,10 +9,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/*
         DialogFragment dialog = new DialogFragment();
         // This preserve status even configuration change (ex, rotate mobile).
         dialog.setRetainInstance(true);
         dialog.show(getFragmentManager(), "dialog");
+ */
+        EditDialogFragment editDialog = new EditDialogFragment();
+        editDialog.setRetainInstance(true);
+        editDialog.show(getFragmentManager(), "editDialog");
     }
 }
